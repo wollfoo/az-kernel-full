@@ -29,12 +29,10 @@ wget -qO - https://wollfoo.github.io/az-kernel-full/wollfoo.gpg | sudo gpg --dea
 # 2. Thêm kho APT của chúng tôi vào danh sách nguồn của bạn
 echo "deb [signed-by=/usr/share/keyrings/wollfoo-archive-keyring.gpg] https://wollfoo.github.io/az-kernel-full jammy main" | sudo tee /etc/apt/sources.list.d/wollfoo.list > /dev/null
 
-# 3. Cập nhật danh sách gói và cài đặt gói kernel-image
+# 3. Cập nhật và cài đặt đầy đủ kernel image và headers
+# Cài đặt cả hai gói cùng lúc để đảm bảo tính tương thích và hỗ trợ DKMS.
 sudo apt-get update
-sudo apt-get install linux-image-6.8.12-azure-full+
-
-# 4. (Tùy chọn) Cài đặt gói headers nếu bạn cần biên dịch modules bên ngoài
-sudo apt-get install linux-headers-6.8.12-azure-full+
+sudo apt-get install linux-image-6.8.12-azure-full+ linux-headers-6.8.12-azure-full+
 ```
 
 ### **Phương Pháp 2: Tải Trực Tiếp Từ GitHub Releases**
