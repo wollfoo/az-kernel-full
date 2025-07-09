@@ -1,0 +1,7 @@
+Origin: Wollfoo APT Repo
+Label: Wollfoo
+Codename: jammy
+Architectures: amd64
+Components: main
+Description: Custom Kernel Packages
+SignWith: 8FDB908257D5D953

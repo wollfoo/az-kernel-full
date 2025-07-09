@@ -1,0 +1,19 @@
+Origin: Wollfoo APT Repo
+Label: Wollfoo
+Codename: jammy
+Date: Wed, 09 Jul 2025 12:46:10 UTC
+Architectures: amd64
+Components: main
+Description: Custom Kernel Packages
+MD5Sum:
+ c8aba910ccba22085fd01328f0d27027 2431 main/binary-amd64/Packages
+ f0e737514004b891c44fcf4fd5495ccf 913 main/binary-amd64/Packages.gz
+ 83437a2da8be4c31c44860e52b4beed8 112 main/binary-amd64/Release
+SHA1:
+ 5e31fea0a05ce5759142804deff79628bad5c7bc 2431 main/binary-amd64/Packages
+ a9515c19cb57377ff62ace58bf062a67864f4c25 913 main/binary-amd64/Packages.gz
+ bb85cdc162e2c5461a8b083fcebd36d12a6d3459 112 main/binary-amd64/Release
+SHA256:
+ d769f65e5298c720722853a91896842b25f13653f6b7471d77f31ff2dcdcf38e 2431 main/binary-amd64/Packages
+ ab2383ab7296708484e853049052fa47d51bef9e0696a082aad824394094b0b5 913 main/binary-amd64/Packages.gz
+ 1d8c4de7cbc72bf3eee65ca08ed3b2240e8ac802b590b238dcc943a0f1bf9445 112 main/binary-amd64/Release

@@ -1,0 +1,57 @@
+Package: linux-headers-6.8.12-azure-full+
+Source: linux-upstream
+Version: 6.8.12-g4f4a389a1a08-4
+Architecture: amd64
+Maintainer: azureuser <azureuser@51eddd9ab24a4b6098bcaa34230d0a49000000.kwb53jd4tmeedbajsf5py2divc.cx.internal.cloudapp.net>
+Installed-Size: 51266
+Homepage: https://www.kernel.org/
+Priority: optional
+Section: kernel
+Filename: pool/main/l/linux-upstream/linux-headers-6.8.12-azure-full+_6.8.12-g4f4a389a1a08-4_amd64.deb
+Size: 9177846
+SHA256: 7355dc9d198ab4d123efa5f9ff0af0bc6abd3a8ea4dc8a397ec18402eedc4cc2
+SHA1: c99ad4ca075234bb0378511cd45b6abea38ff52e
+MD5sum: e60856e748b62d9cf7a04d4334128a60
+Description: Linux kernel headers for 6.8.12-azure-full+ on amd64
+ This package provides kernel header files for 6.8.12-azure-full+ on amd64
+ .
+ This is useful for people who need to build external modules
+
+Package: linux-image-6.8.12-azure-full+
+Source: linux-upstream
+Version: 6.8.12-g4f4a389a1a08-4
+Architecture: amd64
+Maintainer: azureuser <azureuser@51eddd9ab24a4b6098bcaa34230d0a49000000.kwb53jd4tmeedbajsf5py2divc.cx.internal.cloudapp.net>
+Installed-Size: 13027
+Homepage: https://www.kernel.org/
+Priority: optional
+Section: kernel
+Filename: pool/main/l/linux-upstream/linux-image-6.8.12-azure-full+_6.8.12-g4f4a389a1a08-4_amd64.deb
+Size: 10203472
+SHA256: 3d3c2d0d8b329337f1b229f58c40b005ad9396415746d808cfe337940d19a54d
+SHA1: ebe71d397ca6e6b17e7ca8115ba3fc7d4d115880
+MD5sum: 818ebc3478f12734f6b230ceb182af1d
+Description: Linux kernel, version 6.8.12-azure-full+
+ This package contains the Linux kernel, modules and corresponding other
+ files, version: 6.8.12-azure-full+.
+
+Package: linux-libc-dev
+Source: linux-upstream
+Version: 6.8.12-g4f4a389a1a08-4
+Architecture: amd64
+Maintainer: azureuser <azureuser@51eddd9ab24a4b6098bcaa34230d0a49000000.kwb53jd4tmeedbajsf5py2divc.cx.internal.cloudapp.net>
+Installed-Size: 6975
+Provides: linux-kernel-headers
+Multi-Arch: same
+Homepage: https://www.kernel.org/
+Priority: optional
+Section: devel
+Filename: pool/main/l/linux-upstream/linux-libc-dev_6.8.12-g4f4a389a1a08-4_amd64.deb
+Size: 1401166
+SHA256: c8dbcc924daf5d9e6f4c092ec144ec17dae620e87d7b29aa651e4120f82db90f
+SHA1: a26e6cf194423b9cd8f291a4eadb51867bcd55a2
+MD5sum: 1df1cf3c6b863081eeaddc96f49fc26a
+Description: Linux support headers for userspace development
+ This package provides userspaces headers from the Linux kernel.  These headers
+ are used by the installed headers for GNU glibc and other system libraries.
+

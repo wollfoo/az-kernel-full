@@ -1,0 +1,5 @@
+Component: main
+Origin: Wollfoo APT Repo
+Label: Wollfoo
+Architecture: amd64
+Description: Custom Kernel Packages
