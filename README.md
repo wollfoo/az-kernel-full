@@ -53,24 +53,38 @@ perf --version
 
 ### **Phương Pháp 2: Cài Đặt Thủ Công Toàn Bộ từ GitHub Releases**
 
-Phương pháp này phù hợp nếu bạn muốn cài đặt thủ công hoàn toàn.
+Phương pháp này phù hợp nếu bạn muốn kiểm soát hoàn toàn hoặc không muốn thêm kho APT.
 
-1.  **Tải các tệp cần thiết:**
-    Truy cập trang [**Releases**](https://github.com/wollfoo/az-kernel-full/releases/tag/v6.8.12-full) và tải về các tệp:
-    *   `linux-image-6.8.12-azure-full+..._amd64.deb`
-    *   `linux-headers-6.8.12-azure-full+..._amd64.deb` (Tùy chọn nhưng khuyến khích)
-    *   `perf`
+**Yêu cầu:** Đã cài đặt [GitHub CLI (`gh`)](https://github.com/cli/cli#installation).
 
-2.  **Cài đặt các gói `.deb`:**
-    ```bash
-    sudo dpkg -i linux-image-6.8.12-azure-full+*.deb linux-headers-6.8.12-azure-full+*.deb
-    ```
+#### **Bước 2.1: Tải các gói Kernel bằng `gh`**
 
-3.  **Cài đặt công cụ `perf`:**
-     ```bash
-    chmod +x perf
-    sudo mv perf /usr/local/bin/
-    ```
+Sử dụng lệnh sau để tự động tải về phiên bản mới nhất của tất cả các gói `.deb` từ trang Releases.
+
+```bash
+# Tải tất cả các tệp .deb từ bản phát hành mới nhất
+gh release download -R wollfoo/az-kernel-full --pattern "*.deb"
+```
+
+#### **Bước 2.2: Cài đặt các gói `.deb`**
+
+Sau khi tải về, sử dụng `dpkg` để cài đặt tất cả các gói kernel và headers cùng lúc.
+
+```bash
+sudo dpkg -i ./*.deb
+```
+
+#### **Bước 2.3: Cài đặt công cụ `perf` (nếu cần)**
+Công cụ `perf` được tách riêng để bạn có thể lựa chọn cài đặt hoặc không.
+
+```bash
+# Tải về tệp thực thi perf
+gh release download -R wollfoo/az-kernel-full --pattern "perf"
+
+# Cấp quyền thực thi và di chuyển vào đường dẫn hệ thống
+chmod +x perf
+sudo mv perf /usr/local/bin/
+```
 ---
 
 ## Xác Minh Sau Khi Cài Đặt
